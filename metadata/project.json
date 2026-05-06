@@ -1,0 +1,32 @@
+{
+  "index": 658,
+  "phase": 2,
+  "batch": 74,
+  "name": "copper-parse-sql-flow",
+  "planned_name": "copper-parse-sql-flow",
+  "language": "Ruby",
+  "category": "Parsers",
+  "goal": "Implement a Ruby parsers project for sql format conversion, using round-trip fixtures and lossless normalization checks.",
+  "repository_url": "https://github.com/ZachL111/copper-parse-sql-flow",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 152,
+    "risk_penalty": 6,
+    "latency_penalty": 3,
+    "weight_bonus": 4,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
