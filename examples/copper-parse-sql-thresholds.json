@@ -1,0 +1,17 @@
+{
+  "repo": "copper-parse-sql-flow",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 192,
+    "watch": 102
+  },
+  "terms": [
+    "token drift",
+    "grammar width",
+    "label quality",
+    "error locality"
+  ]
+}
